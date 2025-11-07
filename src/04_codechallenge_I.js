@@ -10,3 +10,20 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 */
 
 const prompt = require('prompt-sync')({sigint: true});
+
+
+
+
+
+
+
+
+
+
+// Eigener Code
+// let firstNumber = prompt("Ihre erste Zahl: ");
+// let secondNumber = prompt("Ihre zweite Zahl: ");
+// firstNumber = parseFloat(firstNumber);
+// secondNumber = parseFloat(secondNumber);
+// console.log("Die Summe Ihrer Zahlen lautet: ",  firstNumber + secondNumber);
+
