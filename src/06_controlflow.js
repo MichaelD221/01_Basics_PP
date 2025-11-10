@@ -68,36 +68,54 @@ isJohnEqual = (ageJohn == ageMark);
 
 /****** Fallunterscheidung / SWITCH|CASE 1 ******/
 
-const firstName = "Jane";
-let job;
+// const firstName = "Jane";
+// let job;
 
-job = "driver";      // .. fährt TAXI! / UBER    wird stets überschrieben
-job = "diver";       // .. taucht im Rhein!
-job = "artist";      // .. malt ein Bild!
-job = "pilot";       // .. macht etwas anderes! --> default
-job = "teacher";     // .. unterrichtet!
+// job = "driver";      // .. fährt TAXI! / UBER    wird stets überschrieben
+// job = "diver";       // .. taucht im Rhein!
+// job = "artist";      // .. malt ein Bild!
+// job = "pilot";       // .. macht etwas anderes! --> default
+// job = "teacher";     // .. unterrichtet!
 // job = "instructor";  // .. unterrichtet!
 
-switch (job) 
-{
-    case "driver":
-        console.log(firstName + " fährt TAXI!");
-        break; // If-Else-Anweisungen werden automatisch nach der ersten True-Bedingung abgebrochen. Switch-Case-Anweisungen laufen hingegen weiter, bis sie auf ein break treffen oder das Ende des Blocks erreicht ist.
-    case "diver":
-        console.log(firstName + " taucht im Rhein!");
-        break;
-    case "artist":
-        console.log(firstName + " malt ein Bild!");
-        break;
-    case "teacher":
-    case "instructor":
-        console.log(firstName + " unterrichtet!");
-        break;
+// switch (job) 
+// {
+//     case "driver":
+//         console.log(firstName + " fährt TAXI!");
+//         break; // If-Else-Anweisungen werden automatisch nach der ersten True-Bedingung abgebrochen. Switch-Case-Anweisungen laufen hingegen weiter, bis sie auf ein break treffen oder das Ende des Blocks erreicht ist.
+//     case "diver":
+//         console.log(firstName + " taucht im Rhein!");
+//         break;
+//     case "artist":
+//         console.log(firstName + " malt ein Bild!");
+//         break;
+//     case "teacher":
+//     case "instructor":
+//         console.log(firstName + " unterrichtet!");
+//         break;
     
 
 
 
-    default: // WICHTIG !!!! Das ist der Schwarze Schwan // in case // das Rettungsseil // wenn oben nichts passt
-        console.log(firstName + " macht etwas anderes!");
+//     default: // WICHTIG !!!! Das ist der Schwarze Schwan // in case // das Rettungsseil // wenn oben nichts passt
+//         console.log(firstName + " macht etwas anderes!");
+//         break;
+// }
+
+
+/******** Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = true; // bei false: Zeigt den ersten Case der fehlschlägt // bei true: den richtigen zb hier == 1
+const value = 10;
+
+switch (cond) {
+    case (value == 1):
+        console.log("case 1.");
+        break;
+    case (value == 2):
+        console.log("case 2.");
+        break;
+    default:
+        console.log("Value hat einen anderen Wert.");
         break;
 }
