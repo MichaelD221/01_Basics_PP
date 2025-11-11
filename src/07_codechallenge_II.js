@@ -38,9 +38,47 @@ switch (cond) {
         console.log("Sie bekommen Cola.");
         break;
     case (age > 17):
-        console.log("Sie bekommen Cola.");
+        console.log("Sie bekommen Wein.");
         break;
     default:
-        console.log("Ungültige Eingabe.");
+        console.log("Atmen Sie tief durch und versuchen Sie es noch einmal.");
         break;
 }
+
+
+
+
+// //  TESTGELÄNDE
+// const prompt = require('prompt-sync')({sigint: true}); // required for prompts
+
+// let answer, score, firstName;
+
+// console.log("Willkommen beim Comcave-Quiz !");
+// firstName = prompt("Wie lautet Ihr Name?: ");
+// console.log("Hallo " + firstName + ", kommen wir zur ersten Frage..");
+// console.log("");
+// console.log("Wie heißt die Hauptstadt von Schottland?");
+// console.log("A: Glasgow");
+// console.log("B: Edinburgh");
+// console.log("C: Paisley");
+// console.log("D: Washington");
+
+// answer = prompt("Geben Sie Ihre Antwort ein (A,B,C oder D): ");
+
+// const cond = true;
+
+// switch (cond)
+// {
+//     case (answer == "B"):
+//         console.log("Richtige Antwort!");
+//         break;
+//     default:
+//         console.log("Leider Falsch :(");
+//         break;
+// }
+
+
+
+
+
+

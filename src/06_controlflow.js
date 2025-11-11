@@ -119,3 +119,7 @@ switch (cond) {
         console.log("Value hat einen anderen Wert.");
         break;
 }
+
+
+
+
