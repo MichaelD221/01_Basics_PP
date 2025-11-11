@@ -60,15 +60,39 @@ function ausgabeNamen3(firstName, familyName) { // Parameter
 // Postulat: one function = one job (uncle Bob)
 // SRP single responsibility principle // Eduscho, alles bleibt wie es ist, aber Funktionalitäten und Verantwortlichkeiten trennen
 
-ausgabeNamenSRP("Max","Mütze");
+// ausgabeNamenSRP("Max","Mütze");
 
 function ausgabeNamenSRP(firstName, familyName) { // Parameter
 
     //1. Verantwortlichkeit/ 1st responsibility: string composing 
     const GAP = " ";
-    let outputStr = "Hallo, " + firstName + GAP + familyName + "!"
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
 
     //2nd responsibility: string output
     console.log(outputStr);
 
 }
+
+/***** Funktionen 03b *****/ 
+
+// 1st responsibility: string composing 
+output(getString("Max","Mütze")); // baut den String
+output(getString("Maxine","Mützerich"));
+const prompt = require('prompt-sync')({sigint: true});
+output(getString(prompt("Vorname?: "),prompt("Name?: ")));
+
+
+function getString(firstName,familyName) {
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
+    return outputStr; // Funktion - OUTPUT sendet Daten zum call
+}
+
+// 2nd responsibility: string output
+// output("hi");
+// output(2);
+// output(true);
+function output(outputData) { // Wrapper
+    console.log(outputData); // wird das kommentiert, wird nachfolgender Text deaktiviert
+}
+
