@@ -8,4 +8,9 @@
 // bestellung.json  - Datei bitte in den online-Editor STRUCTOG laden
 // https://ddi.education/struktog/
 
+const prompt = require('prompt-sync')({sigint: true});
 
+function Burger(Hamburger, Cheeseburger, Chilliburger);
+{
+
+}
