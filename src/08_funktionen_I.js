@@ -45,6 +45,11 @@ function ausgabeNamen2(firstName) { // Parameter
 ausgabeNamen3("Max", "Mütze");
 ausgabeNamen3("Maxine", "Mützerich");
 
+// Argumente werden von prompt() geliefert
+const prompt = require('prompt-sync')({sigint: true});
+ausgabeNamen3(prompt("Vorname: "), prompt("Name: "));
+
+
 function ausgabeNamen3(firstName, familyName) { // Parameter
     console.log("Hallo, " + firstName + " " + familyName + "!");
 }
