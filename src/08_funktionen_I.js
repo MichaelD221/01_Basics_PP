@@ -8,10 +8,10 @@
 
 // Funktionsrumpf | callee
 // Funktionsdeklaration
-function test()
-{
-    console.log("Hallo, Kevin!");
-}
+// function test()
+// {
+//     console.log("Hallo, Kevin!");
+// }
 
 // /***** Funktionen 02a *****/
 // // 2a. Parametrisierung + Datenübergabe von INNEN
@@ -76,97 +76,101 @@ function test()
 // /***** Funktionen 03b *****/ 
 
 // // 1st responsibility: string composing 
-// output(getString("Max","Mütze")); // baut den String
+output(getString("Max","Mütze")); // baut den String
 // output(getString("Maxine","Mützerich"));
 // const prompt = require('prompt-sync')({sigint: true});
 // output(getString(prompt("Vorname?: "),prompt("Name?: ")));
 
 
-// function getString(firstName,familyName) {
-//     const GAP = " ";
-//     let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
-//     return outputStr; // Funktion - OUTPUT sendet Daten zum call
-// }
+function getString(firstName,familyName) {
+    const GAP = " ";
+    let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
+    return outputStr; // Funktion - OUTPUT sendet Daten zum call
+    console.log("hi"); // Abbruch
+}
 
 // // 2nd responsibility: string output
 // // output("hi");
 // // output(2);
 // // output(true);
-// function output(outputData) { // Wrapper
-//     console.log(outputData); // wird das kommentiert, wird nachfolgender Text deaktiviert
+function output(outputData) { // Wrapper
+    console.log(outputData); // wird das kommentiert, wird nachfolgender Text deaktiviert
+}
+
+
+
+
+
+// test();
+
+// function test()
+// {
+//     console.log("Hallo, Kevin!");
+// }
+// ///////////////////////////////////////////
+// console.log("-----------------------------");
+// ///////////////////////////////////////////
+// ausgabeNamen();
+
+// function ausgabeNamen() 
+// {
+//     let firstName = "Karsten";
+//     console.log("Hallo, " + firstName + "!");
+// }
+// ///////////////////////////////////////////
+// console.log("-----------------------------");
+// ///////////////////////////////////////////
+// ausgabeNamen2("Kevin");
+// ausgabeNamen2("Klaus");
+// ausgabeNamen2("Ibrahim");
+
+// function ausgabeNamen2(firstName) 
+// {
+//     console.log("Hallo, " + firstName + "!");
+// }
+// ///////////////////////////////////////////
+// console.log("-----------------------------");
+// ///////////////////////////////////////////
+// ausgabeNamen3("Max", "Mütze");
+// ausgabeNamen3("Maxine", "Mützerich");
+// ausgabeNamen3(prompt("Vorname: "), prompt("Name: "));
+
+// function ausgabeNamen3(firstName, familyName) 
+// {
+//     console.log("Hallo, " + firstName + " " + familyName + "!");
+// }
+// ///////////////////////////////////////////
+// console.log("-----------------------------");
+// ///////////////////////////////////////////
+// ausgabeNamenSRP("Max","Mütze");
+
+// function ausgabeNamenSRP(firstName, familyName) 
+// {
+//     const GAP = " ";
+//     let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
+//     console.log(outputStr);
 // }
 
 
-test();
 
-function test()
-{
-    console.log("Hallo, Kevin!");
-}
-///////////////////////////////////////////
-console.log("-----------------------------");
-///////////////////////////////////////////
-ausgabeNamen();
+// output(getString("Max","Mütze"));
+// output(getString("Maxine","Mützerich"));
+// output(getString(prompt("Vorname?: "),prompt("Name?: ")));
 
-function ausgabeNamen() 
-{
-    let firstName = "Karsten";
-    console.log("Hallo, " + firstName + "!");
-}
-///////////////////////////////////////////
-console.log("-----------------------------");
-///////////////////////////////////////////
-ausgabeNamen2("Kevin");
-ausgabeNamen2("Klaus");
-ausgabeNamen2("Ibrahim");
+// function getString(firstName,familyName) 
+// {
+//     const GAP = " ";
+//     let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
+//     return outputStr;
+// }
 
-function ausgabeNamen2(firstName) 
-{
-    console.log("Hallo, " + firstName + "!");
-}
-///////////////////////////////////////////
-console.log("-----------------------------");
-///////////////////////////////////////////
-ausgabeNamen3("Max", "Mütze");
-ausgabeNamen3("Maxine", "Mützerich");
-ausgabeNamen3(prompt("Vorname: "), prompt("Name: "));
+// output("hi");
+// output(2);
+// output(true);
 
-function ausgabeNamen3(firstName, familyName) 
-{
-    console.log("Hallo, " + firstName + " " + familyName + "!");
-}
-///////////////////////////////////////////
-console.log("-----------------------------");
-///////////////////////////////////////////
-ausgabeNamenSRP("Max","Mütze");
-
-function ausgabeNamenSRP(firstName, familyName) 
-{
-    const GAP = " ";
-    let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
-    console.log(outputStr);
-}
-
-
-
-output(getString("Max","Mütze"));
-output(getString("Maxine","Mützerich"));
-output(getString(prompt("Vorname?: "),prompt("Name?: ")));
-
-function getString(firstName,familyName) 
-{
-    const GAP = " ";
-    let outputStr = "Hallo, " + firstName + GAP + familyName + "!";
-    return outputStr;
-}
-
-output("hi");
-output(2);
-output(true);
-
-function output(outputData) 
-{
-    console.log(outputData);
-}
+// function output(outputData) 
+// {
+//     console.log(outputData);
+// }
 
 

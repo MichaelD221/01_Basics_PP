@@ -42,10 +42,10 @@ getränk()
 function getränk()
 {
     console.log("Möchten Sie ein Getränk?");
-    decision = prompt("j/n?: ");
+    decision = prompt("j/n?: "); //.toLowerCase();
     const cond = true;
 
-    if(decision == "j")
+    if(decision == "j" || "J") // dann fällt das groß J weg
     {
         decision = prompt("Möchten Sie Cola (1), Fanta (2) oder Sprite (3)?: ");
         switch (cond) 
