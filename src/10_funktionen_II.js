@@ -13,6 +13,31 @@
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich";
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 
+/** Dateneingabe */
+
+const prompt = require('prompt-sync')({sigint: true});
+
+startApp();
+
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl1?: "));
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl2?: "));
+}
+
+function getOp() {
+	return prompt("OP?: ");
+}
+
+
+
+
 /** WAS soll gemacht werden? */
 
 // module: calculator | tests:
@@ -25,7 +50,7 @@ const ERROR_STR_GEN = "Irgendwas ging schief!";
 // output(calculator(3,0,"/"));
 // output(calculator(3,2,"#?!"));
 function calculator(a, b, op) {
-	
+
 	switch (op) {
 		case "+":
 			return add(a,b); // nach return wird eine Aktion abgebrochen, daher kein break danach nötig
