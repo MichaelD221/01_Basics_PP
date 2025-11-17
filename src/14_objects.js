@@ -6,6 +6,35 @@
 // output(arr[0]);
 // output("------------");
 
+
+// let comcave;
+// comcave =   [
+//                 ["Felix", "Michael", "Karsten", "Steffen"],
+//                 ["Nina", "Christopher", "Kevin", "Ibrahim", "Marc"]
+//             ];
+
+// const NEW_LINE = "\n";
+// let brille = comcave[0][0] + ", " + comcave[1][0] + " und " + comcave[1][1];
+// let kahl = comcave[0][0] + " und " + comcave[0][1];
+
+// console.log("Unsere Klasse hat folgende Mitschüler:");
+// output();
+// output("Es gibt insgesamt " + comcave.length + " Sitzreihen.");
+// output(NEW_LINE);
+// output("Auf der rechten Reihe sitzen: " + comcave[0]);
+// output(NEW_LINE);
+// output("Auf der linken Reihe sitzen: " + comcave[1]);
+// output(NEW_LINE);
+// output("wobei " + comcave[1][4] + " eigentlich in einem anderen Raum sitzt, aber uns immer besuchen kommt.");
+// console.log("---------------------");
+
+// console.log("Diese Mitschüler haben eine Brille:");
+// output(brille);
+// output(NEW_LINE);
+// console.log("Diese Mitschüler sind kahlköpfig:");
+// output(kahl);
+
+
 // nested arrays - Prinzip: [[[]]]
 // nested arrays  - hier: [[],[]]
 // arr =   [
@@ -77,21 +106,21 @@
 // deep - deeper - deepest
 // nested object {{}}
 
-let baikal = {
-                value:"10m",
-                deep:{
-                    deeper:{
-                            temperature:"4 Grad Celsuis",
-                            deepest:"Das Licht - auf 1642m!"
-                           }
-                     }
-             }
+// let baikal = {
+//                 value:"10m",
+//                 deep:{
+//                     deeper:{
+//                             temperature:"4 Grad Celsuis",
+//                             deepest:"Das Licht - auf 1642m!"
+//                            }
+//                      }
+//              }
 
 
-output(baikal);
-output(baikal.value);
-output(baikal.deep.deeper.temperature);
-output(baikal.deep.deeper.deepest);
+// output(baikal);
+// output(baikal.value);
+// output(baikal.deep.deeper.temperature);
+// output(baikal.deep.deeper.deepest);
 
 
 
