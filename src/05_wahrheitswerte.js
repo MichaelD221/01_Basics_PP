@@ -20,20 +20,20 @@ const birthYearMark = 2000;
 // ageMark = year - birthYearMark;
 
 // Berechnung Alter Iteration III
-let year = new Date().getFullYear();
+// let year = new Date().getFullYear();
 // console.log("Jahr: " + year);
-ageJohn = year - birthYearJohn;
-ageMark = year - birthYearMark;
+// ageJohn = year - birthYearJohn;
+// ageMark = year - birthYearMark;
 
 
 // Ausgabe
 console.log("ageJohn: " + ageJohn);
 console.log("ageMark: " + ageMark);
 
-// Deklaration | Tests | Aussagenlogik
-// let isJohnOlder = false;
-let isJohnOlder = (ageJohn > ageMark); // Test auf Ungleichheit > oder <
-let isJohnEqual = (ageJohn == ageMark); // Test auf Gleichheit ==
+// // Deklaration | Tests | Aussagenlogik
+// // let isJohnOlder = false;
+// let isJohnOlder = (ageJohn > ageMark); // Test auf Ungleichheit > oder <
+// let isJohnEqual = (ageJohn == ageMark); // Test auf Gleichheit ==
 
-console.log("isJohnOlder: " + isJohnOlder);
-console.log("isJohnEqual: " + isJohnEqual);
+// console.log("isJohnOlder: " + isJohnOlder);
+// console.log("isJohnEqual: " + isJohnEqual);

@@ -22,7 +22,7 @@ const prompt = require('prompt-sync')({sigint: true});
 // console.log("Datentyp: " + typeof ziffer1);
 // console.log("Datentyp: " + typeof ziffer2);
 
-// // Typkonvertierung 1: ziffer --> zahl (mit Nachkomma)
+// // // Typkonvertierung 1: ziffer --> zahl (mit Nachkomma)
 // zahl1 = parseFloat(ziffer1);
 // zahl2 = parseFloat(ziffer2);
 

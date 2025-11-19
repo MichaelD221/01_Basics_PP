@@ -105,20 +105,20 @@ isJohnEqual = (ageJohn == ageMark);
 
 /******** Fallunterscheidung / SWITCH|CASE 2 *******/
 
-const cond = true; // bei false: Zeigt den ersten Case der fehlschlägt // bei true: den richtigen zb hier == 1
-const value = 10;
+// const cond = true; // bei false: Zeigt den ersten Case der fehlschlägt // bei true: den richtigen zb hier == 1
+// const value = 10;
 
-switch (cond) {
-    case (value == 1):
-        console.log("case 1.");
-        break;
-    case (value == 2):
-        console.log("case 2.");
-        break;
-    default:
-        console.log("Value hat einen anderen Wert.");
-        break;
-}
+// switch (cond) {
+//     case (value == 1):
+//         console.log("case 1.");
+//         break;
+//     case (value == 2):
+//         console.log("case 2.");
+//         break;
+//     default:
+//         console.log("Value hat einen anderen Wert.");
+//         break;
+// }
 
 
 
